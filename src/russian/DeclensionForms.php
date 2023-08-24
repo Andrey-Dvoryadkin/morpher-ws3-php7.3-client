@@ -4,13 +4,13 @@ namespace Morpher\Ws3Client\Russian;
 
 class DeclensionForms
 {
-    public ?string $Nominative;
-    public ?string $Genitive;
-    public ?string $Dative;
-    public ?string $Accusative;
-    public ?string $Instrumental;
-    public ?string $Prepositional;
-    public ?string $PrepositionalWithO;    
+    public $Nominative;
+    public $Genitive;
+    public $Dative;
+    public $Accusative;
+    public $Instrumental;
+    public $Prepositional;
+    public $PrepositionalWithO;    
 
     function __construct($data)
     {

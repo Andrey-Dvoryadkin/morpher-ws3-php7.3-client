@@ -3,11 +3,11 @@ namespace Morpher\Ws3Client;
 
 abstract class UserDictBase
 {
-    protected WebClient $webClient;
+    protected $webClient;
 
-    protected string $endpoint;
+    protected $endpoint;
 
-    protected string $CorrectionEntryClassName;
+    protected $CorrectionEntryClassName;
     
     function __construct(WebClient $webClient, string $endpoint, string $CorrectionEntryClassName)
     {

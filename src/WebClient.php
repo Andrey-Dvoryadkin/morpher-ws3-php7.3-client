@@ -7,15 +7,15 @@ use GuzzleHttp\Exception\GuzzleException;
 
 class WebClient
 {
-    private string $tokenBase64;
-    private \GuzzleHttp\Client $client;
+    private $tokenBase64;
+    private $client;
 
     function __construct(string $url, string $token, float $timeout, $handler)
     {
         $this->tokenBase64 = base64_encode($token);
 
         $this->client = new \GuzzleHttp\Client([
-            'base_uri' => $url,
+            'base_url' => $url,
             'timeout' => $timeout,
             'handler' => $handler
         ]);    
@@ -51,10 +51,9 @@ class WebClient
 
         try
         {
-            $response = $this->client->request($Method, $Endpoint, [
+            $response = $this->client->get($Endpoint, [
                 'query' => $QueryParameters,
                 'headers' => $Headers,
-                'http_errors' => true,
                 'body' => $body,
                 'form_params' => $form_params
             ]);

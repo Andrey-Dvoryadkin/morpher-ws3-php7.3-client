@@ -4,13 +4,13 @@ namespace Morpher\Ws3Client\Russian;
 
 class DeclensionResult extends DeclensionForms
 {
-    public ?DeclensionForms $Plural;
+    public $Plural;
 
-    public ?string $Gender;
-    public ?string $Where;
-    public ?string $From;
-    public ?string $To;
-    public ?FullName $FullName;
+    public $Gender;
+    public $Where;
+    public $From;
+    public $To;
+    public $FullName;
 
     function __construct($data)
     {
