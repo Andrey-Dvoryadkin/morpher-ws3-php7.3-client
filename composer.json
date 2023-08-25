@@ -1,9 +1,9 @@
 {
-    "name": "morpher/ws3-client",
+    "name": "Andrey-Dvoryadkin/morpher-ws3-php7.3-client",
     "version": "1.0.0",
     "description": "Склонение по падежам на русском, украинском и казахском языках, расстановка ударений в текстах - PHP-клиент для API morpher.ru.",
     "keywords": ["declension","inflection","pluralization","russian","ukrainian","qazaq","kazakh"],
-    "homepage": "https://github.com/morpher-ru/morpher-ws3-php-client",
+    "homepage": "https://github.com/Andrey-Dvoryadkin/morpher-ws3-php7.3-client",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -16,7 +16,7 @@
     },
     "authors": [
         {
-            "name": "Mikhail Lukovnikov"
+            "name": "Mikhail Lukovnikov, Andrey Dvoryadkin"
         }
     ],
     "require": {
